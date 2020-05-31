@@ -1,0 +1,773 @@
+@font-face {
+  font-family: cal;
+  src: url("LobsterTwo-Regular.ttf");
+}
+
+@font-face {
+  font-family: cal-2;
+  src: url("LobsterTwo-Regular.ttf");
+}
+
+@font-face {
+  font-family: montserrat;
+  src: url('Montserrat/Montserrat-Light.ttf');
+}
+
+.new-intro{
+  background-image: url("images/1.jpg");
+  position: fixed;
+  height: 100%;
+  width: 100vw;
+  z-index: 2147483646;
+  left: 0vw;
+}
+
+@media screen and ( max-width:1100px ){
+  .w40 {display: none;}
+  .w40 img {display: none;}
+  .w60 {
+    width: 100vw;
+    text-align: center;
+  }
+  .w60 img {display: block;}
+  .dis {display: block;}
+  .w60 h1 {
+    margin: auto;
+  }
+}
+
+.prasinada-gradient{
+  position: relative;
+  top: 10vw;
+  left: 10.8vw;
+  width: 500px;
+  font-size: 74px;
+  font-weight: 900;
+  opacity: 0;
+  animation: intro 1s linear 0s 1;
+  animation-fill-mode: forwards;
+  background: -webkit-linear-gradient(right, rgb(34, 109, 255), rgb(255, 0, 211));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@keyframes intro{
+  100%{
+    opacity: 90%;
+    transition: 2s;
+  }
+}
+h2{
+  text-decoration: underline;
+}
+.impossible{
+  position: relative;
+  top: 10vw;
+  left: -200vw;
+  font-size: 22px;
+  font-weight: 800;
+  animation: impossible 1s linear 0s 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes impossible{
+  100%{left: 11vw;
+  }
+}
+
+.bottom-right{
+  position: fixed;
+  bottom: 5vw;
+  right: 6vw;
+  border-radius: 50%;
+  opacity: 60%;
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.bottom-right:hover{
+  background: rgba(256, 256, 256, 0.6);
+  cursor: pointer;
+}
+
+.bottom-right:active{
+  background: rgba(255, 255, 255, 0.7);
+  cursor: pointer;
+}
+
+#new-intro:target{
+  animation: slide 0.6s linear 0s 1;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-out;
+}
+
+@keyframes slide{
+  30%{
+    left: 90vw;
+  }
+  100%{
+    left: 100vw;
+  }
+}
+
+.centered {
+  float: center;
+}
+
+html {
+  background-color: black;
+}
+
+#main h4 {
+  font-size: 2vw;
+  font-family: cal;
+  letter-spacing: 4px;
+  color: rgb(84, 184, 79);
+}
+
+hr {
+  width: 150%;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  background: white;
+}
+
+.mobile-h{
+  text-decoration: none;
+  display: block;
+  color: black;
+  transition: 0.5s;
+  padding: 10px;
+  margin: 5px;
+  transition: height 0.5s;
+  font-family: 'Montserrat', montserrat;
+  font-size: 18px;
+  width: inherit;
+  border-radius: 7px;
+  min-width: 160px;
+}
+
+.mobile-h:hover{
+  background: #f1f1f1;
+  text-decoration: none;
+  color: black;
+}
+
+.mobile-h:active{text-decoration: none;}
+
+.mobile-menu{
+  background: white;
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 0px;
+  left: 0px;
+  transition: 0.2s;
+  overflow: scroll;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+@keyframes open{
+  100%{height: 92vh;}
+}
+
+@keyframes close{
+  0%{height: 92vh;}
+  100%{height: 0px;}
+}
+
+.mobile-working{
+  background-color: #f9f9f9;
+  min-width: 160px;
+  z-index:1;
+}
+
+.mobile-working a {
+  color: black;
+  font-family: 'Montserrat', montserrat;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.mobile-working a:hover {background-color: #f1f1f1}
+
+.inline{
+  display: inline-block;
+}
+
+.h {
+  text-decoration: none;
+  color: white;
+  transition: 0.5s;
+  padding: 10px;
+  margin: 0px;
+  transition: 0.5s;
+  font-family: 'Montserrat', montserrat;
+  display: inline-block;
+  border-radius: 30px;
+  font-size: 18px;
+}
+
+.h:hover{
+  background: white;
+  text-decoration: none;
+  color: black;
+}
+
+.h:active{text-decoration: none;}
+
+.b {
+  font-size: 2vw;
+  color: white;
+  font-weight: 500;
+  float: left;
+  transition: 0.5s;
+  position: fixed;
+  bottom: 1vw;
+  right: 1vw;
+  border-radius: 20px;
+  background: rgb(217, 150, 56);
+  padding: 10px;
+}
+
+.b:hover {
+  text-decoration: none;
+  color: rgb(72, 255, 79);
+  bottom: 2vw;
+  transition: 0.5s;
+}
+
+.bgblack {
+  margin-top: 0px;
+  background-color: black;
+}
+
+.bgwhite {
+  margin-top: 0px;
+  background-color: white;
+}
+
+.img-responsive{display: inherit;}
+
+.circle{
+  height: 20vw;
+  width: 20vw;
+  border-radius: 50%;
+  background: transparent;
+  margin-left: 50%;
+  margin-right: auto;
+  position: relative;
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.inner-circle{
+  height: 14vw;
+  width: 14vw;
+  background: #a3d7ff;
+  border-radius: 50%;
+  position: absolute;
+  top: 3vw;
+  left: 3vw;
+  transition: 0.8s;
+}
+
+.circtext{
+  font-size: 2vw;
+  font-family: cal-2;
+  font-weight: 700;
+  color: #33a6ff;
+  opacity: 0.8;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  transition: 0.4s;
+}
+
+.tail{
+  position: absolute;
+  height: 20vw;
+  width: 20vw;
+  top: 0px;
+  left: 0px;
+}
+
+.ballcont{
+  height: 20vw;
+  width: 20vw;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  transition: 0.8s;
+}
+
+.ball1 {
+   position: absolute;
+   top: 0%;
+   left: 47%;
+   width: 2vw;
+   height: 2vw;
+   border: 0.6vw solid #33a6ff;
+   border-radius: 50%;
+   transform: translate(-50%,-35%);
+}
+
+.ball2 {
+   position: absolute;
+   top: 96%;
+   left: 53%;
+   width: 2vw;
+   height: 2vw;
+   border: 0.6vw solid #33a6ff;
+   border-radius: 50%;
+   transform: translate(-50%,-35%);
+}
+
+.t1{
+  border-bottom: 0.7vw solid #33a6ff;
+  border-top: 0.7vw solid transparent;
+  border-left: 0.7vw solid transparent;
+  border-right: 0.7vw solid transparent;
+  border-radius: 50%;
+  transform: rotate(290deg);
+}
+
+
+.t2{
+  border-right: 0.7vw solid #33a6ff;
+  border-top: 0.7vw solid transparent;
+  border-left: 0.7vw solid transparent;
+  border-bottom: 0.7vw solid transparent;
+  border-radius: 50%;
+  transform: rotate(315deg);
+}
+
+.t3{
+  border-top: 0.7vw solid #33a6ff;
+  border-bottom: 0.7vw solid transparent;
+  border-left: 0.7vw solid transparent;
+  border-right: 0.7vw solid transparent;
+  border-radius: 50%;
+  transform: rotate(290deg);
+}
+
+.t4{
+  border-left: 0.7vw solid #33a6ff;
+  border-top: 0.7vw solid transparent;
+  border-right: 0.7vw solid transparent;
+  border-bottom: 0.7vw solid transparent;
+  border-radius: 50%;
+  transform: rotate(315deg);
+}
+
+.nice:hover .ballcont{
+  transform: rotate(-180deg);
+  transition: 0.8s;
+}
+
+.ballsmall1{
+  width: 0.675vw;
+  height: 0.675vw;
+  background: #33a6ff;
+  position: absolute;
+  border-radius: 50%;
+  top: 4.84%;
+  left: 28%;
+}
+
+.ballsmall2{
+  width:0.66vw;
+  height: 0.66vw;
+  background: #33a6ff;
+  position: absolute;
+  border-radius: 50%;
+  top: 92.3%;
+  left: 69%;
+}
+
+.nice:hover{
+  cursor: pointer;
+}
+
+.nice:hover .inner-circle{
+  height: 16.5vw;
+  width: 16.5vw;
+  top: 1.75vw;
+  left: 1.75vw;
+  transition: 0.8s;
+  cursor: pointer;
+}
+
+.nice:hover .circtext{
+  font-size: 2.5vw;
+  transition: 0.5s;
+}
+
+.very-nice{
+  height: 0px;
+  width: 0px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: -1;
+  overflow: auto;
+  transition: 0.5s;
+}
+
+.very-nice-2{
+  height: 0px;
+  width: 0px;
+  position: fixed;
+  top: 50%;
+  right: 50%;
+  z-index: -1;
+  overflow: auto;
+  transition: 0.5s;
+}
+
+.very-nice-3{
+  height: 0px;
+  width: 0px;
+  position: fixed;
+  top: 50%;
+  right: 50%;
+  z-index: -1;
+  transition: 0.5s;
+}
+
+.very-nice-4{
+  height: 0px;
+  width: 0px;
+  position: fixed;
+  top: 50%;
+  right: 50%;
+  z-index: -1;
+  overflow: auto;
+  transition: 0.5s;
+}
+
+
+.container{
+  display: block;
+  width: 25%;
+}
+
+.nice:hover .very-nice{
+  z-index: 0;
+  width: 60vw;
+  height: auto;
+  transition: 1s;
+  top: 10%;
+  left: -10%;
+}
+
+.nice:hover .very-nice-2{
+  z-index: 0;
+  width: 60vw;
+  height: auto;
+  transition: 1s;
+  top: 10%;
+  right: -10%;
+}
+
+.nice:hover .very-nice-3{
+  z-index: 0;
+  width: 15vw;
+  height: auto;
+  transition: 1s;
+  top: 17%;
+  left: 41%;
+}
+
+
+.nice:hover .very-nice-4{
+  z-index: 0;
+  width: 18vw;
+  height: auto;
+  transition: 1s;
+  top: 85%;
+  left: 40%;
+}
+
+.b13:hover{
+    background-image: url(images/ourteam.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.open-nice{
+  font-size: 16px;
+  background: rgb(51, 51, 51);
+  width: auto;
+  border-radius: 1.5vw;
+  display: inline-block;
+  padding: 1.5vw;
+  margin-left: 1vw;
+  margin-right: 1vw;
+  margin-bottom: 28px;
+  overflow: hidden;
+  color: white;
+  font-family: 'Montserrat';
+}
+
+.open-nice-2{
+  font-size: 16px;
+  background: rgb(51, 51, 51);
+  width: auto;
+  border-radius: 1.5vw;
+  display: inline-block;
+  padding: 1.5vw;
+  margin-left: 1vw;
+  margin-right: 1vw;
+  margin-bottom: 28px;
+  overflow: hidden;
+  color: white;
+  font-family: 'Montserrat';
+}
+
+.open-nice-3{
+  font-size: 16px;
+  background: rgb(51, 51, 51);
+  width: auto;
+  border-radius: 1.5vw;
+  display: inline-block;
+  padding: 1.5vw;
+  margin-left: 1vw;
+  margin-right: 1vw;
+  margin-bottom: 28px;
+  margin-top: -4vw;
+  overflow: hidden;
+  color: white;
+  font-family: 'Montserrat';
+}
+
+.open-nice-4{
+  font-size: 16px;
+  background: rgb(51, 51, 51);
+  width: auto;
+  border-radius: 1.5vw;
+  display: inline-block;
+  padding: 1.5vw;
+  margin-left: 1vw;
+  margin-right: 1vw;
+  margin-bottom: 28px;
+  overflow: hidden;
+  color: white;
+  font-family: 'Montserrat';
+}
+
+
+.open-nice:hover{
+  cursor: pointer;
+  padding-bottom: 0px;
+  opacity: 0.8;
+}
+
+.open-nice-2:hover{
+  cursor: pointer;
+  padding-bottom: 0px;
+  opacity: 0.8;
+}
+
+.open-nice-3:hover{
+  cursor: pointer;
+  
+  opacity: 0.8;
+}
+
+.open-nice-4:hover{
+  cursor: pointer;
+  
+  opacity: 0.8;
+}
+
+.info-nice{
+  height: 0px;
+  overflow: hidden;
+  transition: 0.5s;
+  background: transparent;
+  margin-right: -1vw;
+  margin-left: -2vw;
+}
+
+.i:hover .info-nice{
+  height: auto;
+  transition: 1.5s;
+}
+
+.open-nice:hover .info-nice{
+  padding: 1.5vw;
+  padding-top: 1vw;
+  transition: 1s;
+  text-align: left;
+  padding-left: 18px;
+  padding-right:6px;
+}
+
+.open-nice-2:hover .info-nice{
+  padding: 1.5vw;
+  padding-top: 1vw;
+  transition: 1s;
+  text-align: left;
+  padding-left: 18px;
+  padding-right:6px;
+}
+
+.r:hover{
+  padding-bottom: 5px;
+}
+
+.l{
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.i1{
+  margin-left: 24%;
+  width: 38%;
+}
+
+.i2{
+  margin-left: -6%;
+  width: 32%;
+}
+
+.i3{
+  margin-left: -34%;
+  width: 20%;
+}
+
+.i4{
+  margin-right: 20%;
+  width: 46%;
+}
+
+.i5{
+  margin-right: -11%;
+  width: 30%;
+}
+
+.i6{
+  margin-right: -36%;
+  width: 20%;
+}
+
+.i7{
+  margin-left: 34%;
+  width: 45%;
+}
+
+.b1:hover{
+  background-image: url(images/community.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  font-weight: 500;
+}
+
+.b2:hover{
+  background-image: url(images/greenery.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  font-weight: 500;
+}
+
+.b3:hover{
+  background-image: url(images/gov.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  font-weight: 500;
+}
+
+.b4:hover{
+  background-image: url(images/edu.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  font-weight: 500;
+}
+
+.b5:hover{
+  background-image: url(images/lowpol.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  font-weight: 500;
+}
+
+.b6:hover{
+  background-image: url(images/comp.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  font-weight: 500;
+}
+
+.b7:hover{
+  background-image: url(images/red.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  font-weight: 500;
+}
+
+.b8:hover{
+  background-image: url(images/waste.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  font-weight: 500;
+}
+
+.b9:hover{
+  background-image: url(images/water.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  font-weight: 500;
+}
+
+.b10:hover{
+  background-image: url(images/transp.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  font-weight: 500;
+}
+
+.b11:hover{
+  background-image: url(images/energy.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  font-weight: 500;
+}
+
+.b12:hover{
+  background-image: url(images/ind.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  font-weight: 500;
+}
+
+.open-nice:hover .black{
+  background: black;
+  opacity: 0.9;
+  padding: 1.5vw;
+  overflow: hidden;
+  margin: -1.5vw;
+}
+
+.open-nice-2:hover .black{
+  background: black;
+  opacity: 0.9;
+  padding: 1.5vw;
+  overflow: hidden;
+  margin: -1.5vw;
+}

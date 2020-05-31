@@ -1,0 +1,144 @@
+		<!DOCTYPE html>
+    <html lang="en">
+
+      <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="../style.css">
+        <title>PRASINADA - Group-29</title>
+      </head>
+
+      <script>
+        var rightTilt = document.getElementsByClassName("navbar-toggle");
+        var leftTilt = document.getElementsByClassName("navbar-toggle");
+        var none = document.getElementsByClassName("navbar-toggle");
+        function expand() {
+          var menu = document.getElementById("mobile-menu");
+            if (menu.style.display == "none") {
+              menu.style.display = "block"
+              menu.style.animation = "open 0.001s linear 0s 1";
+              setTimeout(function(){
+                menu.style.height = "92vh"
+              }, 100);
+
+            } else {
+              menu.style.display = "none"
+              menu.style.animation = "close 0.001s linear 0s 1";
+              setTimeout(function(){
+                menu.style.height = "0px"
+              }, 100);
+            }
+        }
+        function hide() {
+          var menu = document.getElementById("mobile-menu");
+              menu.style.display = "none"
+              menu.style.animation = "close 0.001s linear 0s 1";
+              setTimeout(function(){
+                menu.style.height = "0px"
+              }, 100);
+        }
+      </script>
+
+  <body id="index">
+
+    <a class="b" href="https://participativelearning.org/course/view.php?id=17" target="_blank">GRUEN</a>
+    <div class="container-fluid" width="100vw">
+    <nav class="navbar navbar-fixed-top navbar-expand-lg" id="under-intro" width="100vw">
+      <div class="container">
+        <div class="navbar-header">
+          <a href="../main.html" class="hidden-md-up h inline navbar-right top" onclick="hide()">HOME</a>
+          <button type="button" class="navbar-toggle navbar-right top" onclick="expand()">
+            <span class="icon-bar rightTilt"></span>
+            <span class="icon-bar leftTilt"></span>
+            <span class="icon-bar none"></span>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="../main.html" class="h navbar-brand">HOME</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-left">
+            <li>
+              <div class="dropdown-internal">
+              <a href="#internal-working" class="h">Internal Working<span class="caret intcaret"></span></a>
+              <div class="internal-working">
+                <a href="education.html">Education</a>
+                <a href="community.html">Community Behaviour Changes</a>
+                <a href="governance.html">Governance</a>
+                <a href="greenery.html">Maintenance of Greenery</a>
+                <a href="pollution.html">Low Air Pollution Levels</a>
+                <a href="compensatory.html">Compensatory Act for Forests</a>
+              </div>
+            </div>
+            </li>
+            <li>
+              <div class="dropdown-external">
+              <a href="#external-working" class="h">External Working<span class="caret extcaret"></span></a>
+              <div class="external-working">
+                <a href="water.html">Water System</a>
+                <a href="transport.html">Transportation</a>
+                <a href="temperature.html">Reducing the Temperature of the City</a>
+                <a href="energy.html">Energy Generation</a>
+                <a href="waste.html">Waste management</a>
+                <a href="industries.html">Cleaner Methods of Operating Industries</a>
+              </div>
+            </div>
+            </li>
+            <li><a href="#" class="h">Video Presentation</a></li>
+            <!--<li><a href="#ourteam" class="h">Our Team</a></li>-->
+          </ul>
+        </div>
+        <div class="mobile-menu" id="mobile-menu" onclick="hide()">
+          <a href="#internal-working" class="mobile-h">Internal Working</a>
+          <div class="mobile-working">
+            <a href="education.html">Education</a>
+            <a href="community.html">Community Behaviour Changes</a>
+            <a href="governance.html">Governance</a>
+            <a href="greenery.html">Maintenance of Greenery</a>
+            <a href="pollution.html">Low Air Pollution Levels</a>
+            <a href="compensatory.html">Compensatory Act for Forests</a>
+          </div>
+          <a href="#external-working" class="mobile-h">External Working</a>
+          <div class="mobile-working">
+            <a href="water.html">Water System</a>
+            <a href="transport.html">Transportation</a>
+            <a href="temperature.html">Reducing the Temperature of the City</a>
+            <a href="energy.html">Energy Generation</a>
+            <a href="waste.html">Waste management</a>
+            <a href="industries.html">Cleaner Methods of Operating Industries</a>
+          </div>
+          <a href="#" class="mobile-h">Video Presentation</a>
+          <a href="#ourteam" class="mobile-h">Our Team</a><p></p>
+        </div>
+    </nav>
+  </div>
+
+     <div id="s6" class="bgwhite" height="120vh">
+      <br><br><br><br>
+      <table>
+        <tr>
+          <td class="w60">
+            <h1>COMPENSATORY ACT FOR FORESTS</h1><br>
+            <div class="montserrat">
+            <a href="https://www.drishtiias.com/daily-updates/daily-news-analysis/compensatory-afforestation-fund" target="_blank" style="text-decoration: none;"><p>Compensatory acts of the forest</a> will be implemented in the city of Prasinada. According to this act, every time forest land is diverted for non-forest purposes such as mining or industry, the user agent will have to plant as much as the forest area cleared (in hectares) in some other land or will have to give a fixed sum of money to the government. </p>
+            <p>This will, therefore, maintain an ecological balance and the given funds will be used in the development of the city.</p><br><br>
+            </div>
+          </td>
+
+          <td class="w40">
+            <img src="../images/33.jpg"><br><br><br>
+          </td>
+        </tr>
+
+      </table>
+       <p>
+    	<p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>
+       </p>
+    </div>
+    <p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><font color="black">bruh why did you even scroll?</font>
+</body>
+</html>

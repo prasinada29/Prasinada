@@ -1,0 +1,161 @@
+		<!DOCTYPE html>
+    <html lang="en">
+
+      <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="../style.css">
+        <title>PRASINADA - Group-29</title>
+      </head>
+
+      <script>
+        var rightTilt = document.getElementsByClassName("navbar-toggle");
+        var leftTilt = document.getElementsByClassName("navbar-toggle");
+        var none = document.getElementsByClassName("navbar-toggle");
+        function expand() {
+          var menu = document.getElementById("mobile-menu");
+            if (menu.style.display == "none") {
+              menu.style.display = "block"
+              menu.style.animation = "open 0.001s linear 0s 1";
+              setTimeout(function(){
+                menu.style.height = "92vh"
+              }, 100);
+
+            } else {
+              menu.style.display = "none"
+              menu.style.animation = "close 0.001s linear 0s 1";
+              setTimeout(function(){
+                menu.style.height = "0px"
+              }, 100);
+            }
+        }
+        function hide() {
+          var menu = document.getElementById("mobile-menu");
+              menu.style.display = "none"
+              menu.style.animation = "close 0.001s linear 0s 1";
+              setTimeout(function(){
+                menu.style.height = "0px"
+              }, 100);
+        }
+      </script>
+
+  <body id="index">
+
+    <a class="b" href="https://participativelearning.org/course/view.php?id=17" target="_blank">GRUEN</a>
+    <div class="container-fluid" width="100vw">
+    <nav class="navbar navbar-fixed-top navbar-expand-lg" id="under-intro" width="100vw">
+      <div class="container">
+        <div class="navbar-header">
+          <a href="../main.html" class="hidden-md-up h inline navbar-right top" onclick="hide()">HOME</a>
+          <button type="button" class="navbar-toggle navbar-right top" onclick="expand()">
+            <span class="icon-bar rightTilt"></span>
+            <span class="icon-bar leftTilt"></span>
+            <span class="icon-bar none"></span>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="../main.html" class="h navbar-brand">HOME</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-left">
+            <li>
+              <div class="dropdown-internal">
+              <a href="#internal-working" class="h">Internal Working<span class="caret intcaret"></span></a>
+              <div class="internal-working">
+                <a href="education.html">Education</a>
+                <a href="community.html">Community Behaviour Changes</a>
+                <a href="governance.html">Governance</a>
+                <a href="greenery.html">Maintenance of Greenery</a>
+                <a href="pollution.html">Low Air Pollution Levels</a>
+                <a href="compensatory.html">Compensatory Act for Forests</a>
+              </div>
+            </div>
+            </li>
+            <li>
+              <div class="dropdown-external">
+              <a href="#external-working" class="h">External Working<span class="caret extcaret"></span></a>
+              <div class="external-working">
+                <a href="water.html">Water System</a>
+                <a href="transport.html">Transportation</a>
+                <a href="temperature.html">Reducing the Temperature of the City</a>
+                <a href="energy.html">Energy Generation</a>
+                <a href="waste.html">Waste management</a>
+                <a href="industries.html">Cleaner Methods of Operating Industries</a>
+              </div>
+            </div>
+            </li>
+            <li><a href="#" class="h">Video Presentation</a></li>
+            <!--<li><a href="#ourteam" class="h">Our Team</a></li>-->
+          </ul>
+        </div>
+        <div class="mobile-menu" id="mobile-menu" onclick="hide()">
+          <a href="#internal-working" class="mobile-h">Internal Working</a>
+          <div class="mobile-working">
+            <a href="education.html">Education</a>
+            <a href="community.html">Community Behaviour Changes</a>
+            <a href="governance.html">Governance</a>
+            <a href="greenery.html">Maintenance of Greenery</a>
+            <a href="pollution.html">Low Air Pollution Levels</a>
+            <a href="compensatory.html">Compensatory Act for Forests</a>
+          </div>
+          <a href="#external-working" class="mobile-h">External Working</a>
+          <div class="mobile-working">
+            <a href="water.html">Water System</a>
+            <a href="transport.html">Transportation</a>
+            <a href="temperature.html">Reducing the Temperature of the City</a>
+            <a href="energy.html">Energy Generation</a>
+            <a href="waste.html">Waste management</a>
+            <a href="industries.html">Cleaner Methods of Operating Industries</a>
+          </div>
+          <a href="#" class="mobile-h">Video Presentation</a>
+          <a href="#ourteam" class="mobile-h">Our Team</a><p></p>
+        </div>
+    </nav>
+  </div>
+
+    <div id="s7" class="bgwhite">
+      <br><br><br>
+      <table>
+        <tr>
+          <td class="w60">
+            <h1>WATER SYSTEM</h1><br>
+              <div class="montserrat">
+              
+              <p>A ready supply of fresh water is a human right, but access to safe drinking water is becoming increasingly difficult to achieve in many parts of the world. The problems of climate change and population growth are all leading to new pressures on water. The desalination of brackish and seawater by reverse osmosis is expensive and inefficient. </p>
+
+              <p>Hence it becomes absolutely necessary that we find solutions to this problem and discover new techniques for providing fresh water to humanity. </p>
+
+              <p>Prasinada uses an expedient way for water desalination through the use of nuclear energy. Basically Nuclear desalination uses the excess heat produced from a nuclear reaction to evaporate seawater which is later condensed into fresh water which is suitable for human consumption.  This method is the most optimal method of water desalination for a number of reasons.</p>
+
+              <p>The first and probably the most important reason is that it is completely eco-friendly and does not contribute to Global warming at all as the method for production of heat does not produce carbon dioxide. This method is also the most efficient method for water desalination.</p>
+
+              <p>Hybrid plants which are used for the same purpose release carbon dioxide in a large amount and also cause soil degradation.</p>
+
+              <p>Other methods of <a href="https://www.oecd-nea.org/ndd/workshops/nucogen/presentations/8_Khamis_Overview-nuclear-desalination.pdf" target="_blank">water desalination</a> cause loss of water and take up a lot of energy.</p><br><br>
+              <details>
+                <summary>Read More/Less</summary><br>
+                <p>Prasinada is an urban city and like every urban city, it has been laid with cemented roads and underwater construction. This means that the rainwater cannot seep through the ground and the groundwater cannot be renewed. The solution to this is rainwater harvesting.</p>
+
+                <p>The technique of rainwater harvesting is used in Prasinada on every public and private building as the groundwater can not seep in due to the concretization of ground.</p><br>
+                <center><img src="images/38.jpg" style="width: 40%; height: auto;"><br></center>
+                <p>Rainwater is one of the most important sources of freshwater. Generally, this water is not stored and we see it draining in the sewages and all, which is not at all a good idea, before desalinating the ocean water we need to first save the already available resources.</p>
+
+                <p>Building storage tanks to store rainwater on the community level so that it can be put to alternative uses and freshwater can be conserved. For example for watering plants, toilets, cleaning activities, etc.</p>
+              </details><br>
+            </div>
+          </td>
+          <td class="w40">
+            <img src="../images/35.jpg" class="img-responsive" border="pixels"><br><br><br>
+            <img src="../images/36.jpg" class="img-responsive" border="pixels"><br><br><br>
+            <img src="../images/37.jpg" class="img-responsive" border="pixels">
+          </td>
+        </tr>
+      </table>
+    </div>
+
+</body>
+</html>
