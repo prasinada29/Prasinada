@@ -5,12 +5,7 @@
 
 @font-face{
 	font-family: bye;
-	src:url("Pacifico.ttf");
-}
-
-@font-face{
-	font-family: hi;
-	src:url("AlexBrush-Regular.ttf");
+	src: url('Montserrat/Montserrat-Light.ttf');
 }
 
 @font-face{
@@ -79,6 +74,7 @@ table{
 
 .w40 li{
 	color: white;
+	font-family: bye;
 	font-size: 16px;
 	margin-left: -32px; 
 }
